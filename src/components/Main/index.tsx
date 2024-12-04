@@ -140,7 +140,7 @@ const Main = () => {
     const [instagramPosts, setInstagramPosts] = useState<InstagramPost[]>([]);
     useEffect(() => {
         async function fetchInstagramPosts() {
-            const accessToken = 'IGQWRNZA3hFaURDTzNleEJXT3JsQjlkQU5TT2p4WGZACUms3ckEwYmY2NzMyaHIwVFVkVFdEbVM1cG1sSnhzSlFRUnUwWU9Yd1ZAPZAlhpWUZALeFBqLW9OcEE1QS15TzhCM0NzVklLZA1R6UnlMXzJmdmRjQVpMTm82YkkZD';
+            const accessToken = 'IGQWRQM3JNYUZApQzE4eXc1Umgtd2d1Q2ZACTm9kNjV6ME1Sc0tGdE1MQlRIel8xeko5UkZAKZADlVM3NGZAEF1WWxJOTFOSzV5dHpaeTY5WVp0dnNPOHRpRndZAN3FNWlgtV1pJQ085am9FR21Xc1N0Qk9OSnhsdmpCcTAZD';
             try {
                 const response = await fetch(`https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url,permalink,thumbnail_url,timestamp&access_token=${accessToken}`);
                 const data = await response.json();
