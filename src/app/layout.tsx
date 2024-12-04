@@ -18,7 +18,7 @@ export default function RootLayout({
       <body>
         <button className="whatsApp" aria-label="Direcionar para o WhatsApp">
           <a className="whatsApp-link"
-            href="https://wa.me/5575983332332?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20seus%20produ%C3%A7os!">
+            href="https://wa.me/5575983332332?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20seus%20produtos!">
             <FaWhatsapp className="icon-whats"/>
           </a>
         </button>

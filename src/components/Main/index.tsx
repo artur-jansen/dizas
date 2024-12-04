@@ -2,7 +2,7 @@
 import Header from '../Header';
 import './style.css'
 import Image, { StaticImageData } from 'next/image';
-import bannerLoja from '../../assets/banner__localizacao.png';
+import bannerLado from '../../assets/fachada__lado.jpg'
 import Accordion from 'react-bootstrap/Accordion';
 import { FaInstagram } from "react-icons/fa6";
 import { FaFacebookF } from "react-icons/fa";
@@ -180,7 +180,7 @@ const Main = () => {
                     <p className='home__container-texto-p'>Acreditamos que a roupa certa pode transformar a maneira como você se sente. Na Dizas Stories, você encontra peças que elevam sua autoestima e te inspiram a expressar sua individualidade com autenticidade. Do casual ao formal, descubra o seu estilo e vista-se de autoconfiança.</p>
                 </div>
                 <div className='home__container-btn'>
-                    <button className='home__btn-contato'><a className='home__btn-contato-link' href="https://wa.me/5575983332332?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20seus%20produ%C3%A7os!">Entre Em Contato <FaWhatsapp /></a></button>
+                    <button className='home__btn-contato'><a className='home__btn-contato-link' href="https://wa.me/5575983332332?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20seus%20produtos!">Entre Em Contato <FaWhatsapp /></a></button>
                     <button className='home__btn-site'><a className='home__btn-site-link' href="#sobre">Explore A Loja <TiShoppingCart /></a></button>
                 </div>
             </section>
@@ -240,27 +240,27 @@ const Main = () => {
             <div className="vantagens">
                 <div className="vantagens__container">
                     <div className="vantagens__item">
-                        <BsShop/>
+                        <BsShop className='vantagens__item-icon'/>
                         <h4>Ambiente Agradável</h4>
                         <p>Em nossa loja, você encontra um ambiente acolhedor, com café, biscoitinhos e ar condicionado, além de uma localização privilegiada para facilitar sua visita. Venha se sentir bem e encontrar as peças perfeitas para o seu estilo.</p>
                     </div>
                     <div className="vantagens__item">
-                        <MdBusinessCenter/>
+                        <MdBusinessCenter className='vantagens__item-icon'/>
                         <h4>Consultoria Especializada</h4>
                         <p>Vista-se com segurança e estilo! Nossa consultoria te ajuda a descobrir o que te veste melhor, elevando sua autoestima e autoconfiança. Agende sua consultoria na loja e sinta a diferença.</p>
                     </div>
                     <div className="vantagens__item">
-                        <RiDiscountPercentLine />
+                        <RiDiscountPercentLine className='vantagens__item-icon'/>
                         <h4>10% Off</h4>
                         <p>Não perca tempo! Garanta 10% de desconto em sua primeira compra e comece a economizar agora mesmo. Aproveite essa oportunidade única e renove seu estilo.</p>
                     </div>
                     <div className="vantagens__item">
-                         <GiClothes/>
+                         <GiClothes className='vantagens__item-icon'/>
                         <h4>Tendencias 2024</h4>
                         <p>Simplifique suas escolhas com peças casuais versáteis e cheias de estilo. Nossa coleção traz opções para todos os momentos, do trabalho ao happy hour. Encontre desde camisetas básicas até camisas polo e calças chino que combinam com tudo, Confira!</p>
                     </div>
                 </div>
-                <button className='vantagens__btn-contato'><a className='vantagens__btn-contato-link' href="https://wa.me/5575983332332?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20seus%20produ%C3%A7os!">Entre Em Contato <FaWhatsapp /></a></button>
+                <button className='vantagens__btn-contato'><a className='vantagens__btn-contato-link' href="https://wa.me/5575983332332?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20seus%20produtos!">Entre Em Contato <FaWhatsapp /></a></button>
             </div>
             <section id='colecao' className='colecao'>
                 <h2 className='colecao__titulo'>Nossa Coleção</h2>
@@ -306,7 +306,7 @@ const Main = () => {
                                 <Image className='colecao__modal-container-card-imagem' src={camisa.imagem} alt='Imagem de Camisa'></Image>
                                 <h4 className='colecao__modal-container-card-titulo'>{camisa.nome}</h4>
                                 <button className='colecao__modal-container-card-btn'>
-                                    <a className='colecao__modal-container-card-btn-link' href="https://wa.me/5575983332332?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20seus%20produ%C3%A7os!">QUERO COMPRAR</a>
+                                    <a className='colecao__modal-container-card-btn-link' href="https://wa.me/5575983332332?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20seus%20produtos!">QUERO COMPRAR</a>
                                 </button>
                             </div>
                         ))}
@@ -327,7 +327,7 @@ const Main = () => {
                                 <Image className='colecao__modal-container-card-imagem' src={calca.imagem} alt='Imagem de Calça'></Image>
                                 <h4 className='colecao__modal-container-card-titulo'>{calca.nome}</h4>
                                 <button className='colecao__modal-container-card-btn'>
-                                    <a className='colecao__modal-container-card-btn-link' href="https://wa.me/5575983332332?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20seus%20produ%C3%A7os!">QUERO COMPRAR</a>
+                                    <a className='colecao__modal-container-card-btn-link' href="https://wa.me/5575983332332?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20seus%20produtos!">QUERO COMPRAR</a>
                                 </button>
                             </div>
                         ))}
@@ -348,7 +348,7 @@ const Main = () => {
                                 <Image className='colecao__modal-container-card-imagem' src={bermuda.imagem} alt='Imagem de Bermuda'></Image>
                                 <h4 className='colecao__modal-container-card-titulo'>{bermuda.nome}</h4>
                                 <button className='colecao__modal-container-card-btn'>
-                                    <a className='colecao__modal-container-card-btn-link' href="https://wa.me/5575983332332?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20seus%20produ%C3%A7os!">QUERO COMPRAR</a>
+                                    <a className='colecao__modal-container-card-btn-link' href="https://wa.me/5575983332332?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20seus%20produtos!">QUERO COMPRAR</a>
                                 </button>
                             </div>
                         ))}
@@ -369,7 +369,7 @@ const Main = () => {
                                 <Image className='colecao__modal-container-card-imagem' src={sapato.imagem} alt='Imagem de Sapato'></Image>
                                 <h4 className='colecao__modal-container-card-titulo'>{sapato.nome}</h4>
                                 <button className='colecao__modal-container-card-btn'>
-                                    <a className='colecao__modal-container-card-btn-link' href="https://wa.me/5575983332332?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20seus%20produ%C3%A7os!">QUERO COMPRAR</a>
+                                    <a className='colecao__modal-container-card-btn-link' href="https://wa.me/5575983332332?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20seus%20produtos!">QUERO COMPRAR</a>
                                 </button>
                             </div>
                         ))}
@@ -390,7 +390,7 @@ const Main = () => {
                                 <Image className='colecao__modal-container-card-imagem' src={blazer.imagem} alt='Imagem de Blazer'></Image>
                                 <h4 className='colecao__modal-container-card-titulo'>{blazer.nome}</h4>
                                 <button className='colecao__modal-container-card-btn'>
-                                    <a className='colecao__modal-container-card-btn-link' href="https://wa.me/5575983332332?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20seus%20produ%C3%A7os!">QUERO COMPRAR</a>
+                                    <a className='colecao__modal-container-card-btn-link' href="https://wa.me/5575983332332?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20seus%20produtos!">QUERO COMPRAR</a>
                                 </button>
                             </div>
                         ))}
@@ -413,7 +413,7 @@ const Main = () => {
                 <h2 className='localizacao__titulo'>Onde nos encontrar</h2>
                 <div className="localizacao__container">
                     <div className="localizacao-subcontainer">
-                        <Image className='localizacao__banner' src={bannerLoja} alt={'Foto da fachada da padaria'}></Image>
+                        <Image className='localizacao__banner' src={bannerLado} alt={'Foto da fachada da padaria'}></Image>
                         <div className="localizacao__infos">
                             <div className='localizacao__infos-p'>
                                 <p className='localizacao__infos-p-texto'><FaDotCircle className='localizacao__infos-pontos' />Feira de Santana - Bahia</p>
@@ -438,9 +438,9 @@ const Main = () => {
                     <div className='localizacao__subcontainer-redes'>
                         <h3>Redes Sociais</h3>
                         <div className='container__redes-icons'>
-                            <a href="http://instagram.com"><FaInstagram className='contato__redes-icon' /></a>
-                            <a href="http://facebook.com"><FaFacebookF className='contato__redes-icon' /></a>
-                            <a href="http://wa.me"><FaWhatsapp className='contato__redes-icon' /></a>
+                            <a href="https://www.instagram.com/dizas_store/"><FaInstagram className='contato__redes-icon' /></a>
+                            <a href="https://www.facebook.com/dizasstoree"><FaFacebookF className='contato__redes-icon' /></a>
+                            <a href="https://wa.me/5575983332332?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20seus%20produtos!"><FaWhatsapp className='contato__redes-icon' /></a>
                         </div>
                     </div>
                 </div>

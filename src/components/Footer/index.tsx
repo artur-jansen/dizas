@@ -16,9 +16,9 @@ const Footer = () => {
                     <Image className='img__logo-footer' src={logoFooter} alt="Logo da Dizas Store"/>
                     <p>Excelência e estilo você só encontra aqui, na melhor loja de moda masculina de Feira de Santana.</p>
                     <div className='contato__redes'>
-                        <a href="http://instagram.com"><FaInstagram className='contato__redes-icon'/></a>
-                        <a href="http://facebook.com"><FaFacebookF className='contato__redes-icon'/></a>
-                        <a href="http://wa.me"><FaWhatsapp className='contato__redes-icon'/></a>
+                        <a href="https://www.instagram.com/dizas_store/"><FaInstagram className='contato__redes-icon'/></a>
+                        <a href="https://www.facebook.com/dizasstoree"><FaFacebookF className='contato__redes-icon'/></a>
+                        <a href="https://wa.me/5575983332332?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20seus%20produtos!"><FaWhatsapp className='contato__redes-icon'/></a>
                     </div>
                 </div>
                 <div className='footer__item'>

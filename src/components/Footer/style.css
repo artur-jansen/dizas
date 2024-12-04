@@ -173,4 +173,9 @@ footer{
         width: 340px;
         height: 200px;
     }
+
+    .footer__baixo-img{
+        width: 85px;
+        height: 20px;
+    }
 }
