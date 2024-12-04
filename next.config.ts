@@ -1,7 +1,10 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  /* config options here */
+module.exports = {
+  async rewrites() {
+    return [
+      {
+        source: '/api/google-maps/:path*',
+        destination: 'https://maps.googleapis.com/maps/api/place/details/:path*',
+      },
+    ];
+  },
 };
-
-export default nextConfig;

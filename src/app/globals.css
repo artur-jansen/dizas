@@ -1,13 +1,14 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@font-face {
+  font-family: 'CenturyGothic';
+  src: url('./fonts/CenturyGothic.ttf') format('truetype');
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Chathura:wght@100;300;400;700;800&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Road+Rage&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 html,
@@ -17,16 +18,21 @@ body {
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'CenturyGothic', sans-serif;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
+main{
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: "Chatura", sans-serif;
+  font-weight: bold;
+}
+
+p{
+  font-family: "CenturyGothic";
+  font-weight: 400;
   margin: 0;
 }
 
@@ -35,8 +41,75 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+.whatsApp{
+  background-color: #25D366;
+  color: #ffffff;
+  border: transparent;
+  border-radius: 100%;
+  font-size: 1.5em;
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  bottom: 80px;
+  right: 15px;
+  z-index: 10000;
+}
+
+.whatsApp:hover{
+  transition: 500ms;
+  transform: rotate(360deg);
+  border: 2px solid #25D366;
+  border-radius: 12px;
+  color: #25D366;
+  background-color: #ffffff;
+}
+
+.whatsApp-link{
+  text-decoration: none;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.whatsApp:hover .whatsApp-link{
+  color: #25D366;
+}
+
+.voltarTopo{
+  background-color: transparent;
+  color: #FCC000;
+  border: 3px solid;
+  border-radius: 100%;
+  font-size: 2em;
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+  z-index: 10000;
+}
+
+.voltarTopo:hover{
+  transition: 500ms;
+  transform: rotate(360deg);
+  border-radius: 12px;
+  background-color: #FCC000;
+  border: transparent;
+}
+
+.voltarTopo:hover .voltarTopo-link{
+  color: #ffffff;
+}
+
+.voltarTopo-link{
+  text-decoration: none;
+  color: #FCC000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.voltarTopo.scrolled {
+  display: block;
 }
