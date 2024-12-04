@@ -15,6 +15,11 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import ElfsightWidget from '../Avaliacoes/index'
 import { FaGoogle } from "react-icons/fa";
+import { BsShop } from "react-icons/bs"; 
+import { RiDiscountPercentLine } from "react-icons/ri"; 
+import { MdBusinessCenter } from "react-icons/md"; 
+import { GiClothes } from "react-icons/gi";
+
 
 import camisa1 from '../../assets/camisas/camisa1.webp';
 import camisa2 from '../../assets/camisas/camisa2.webp';
@@ -171,8 +176,8 @@ const Main = () => {
                 <h1 className='home__titulo'>BEM-VINDO QUERIDO CLIENTE</h1>
                 <Image className='home__logo-dizas' src={logoHome} alt='Logo da Dizas Store'></Image>
                 <div className='home__container-texto'>
-                    <h2 className='home__container-texto-titulo'>DESCUBRA A MODA QUE REFLETE SEU ESTILO ÚNICO</h2>
-                    <p className='home__container-texto-p'>Transforme cada dia em uma declaração de estilo com peças que refletem sua personalidade e valores. Explore nosso mundo de moda acessível e consciente, onde cada escolha é um passo em direção a um guarda-roupa mais autêntico e sustentável. Junte-se a nós nessa jornada de expressão e autoconfiança.</p>
+                    <h2 className='home__container-texto-titulo'>Vista-se com a Confiança que Você Merece.</h2>
+                    <p className='home__container-texto-p'>Acreditamos que a roupa certa pode transformar a maneira como você se sente. Na Dizas Stories, você encontra peças que elevam sua autoestima e te inspiram a expressar sua individualidade com autenticidade. Do casual ao formal, descubra o seu estilo e vista-se de autoconfiança.</p>
                 </div>
                 <div className='home__container-btn'>
                     <button className='home__btn-contato'><a className='home__btn-contato-link' href="https://wa.me/5575983332332?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20seus%20produ%C3%A7os!">Entre Em Contato <FaWhatsapp /></a></button>
@@ -235,24 +240,24 @@ const Main = () => {
             <div className="vantagens">
                 <div className="vantagens__container">
                     <div className="vantagens__item">
-                        <div>ICON</div>
+                        <BsShop/>
                         <h4>Ambiente Agradável</h4>
-                        <p>Aqui vai ter uma pequena descrição falando sobre cada vantagem da loja.</p>
+                        <p>Em nossa loja, você encontra um ambiente acolhedor, com café, biscoitinhos e ar condicionado, além de uma localização privilegiada para facilitar sua visita. Venha se sentir bem e encontrar as peças perfeitas para o seu estilo.</p>
                     </div>
                     <div className="vantagens__item">
-                        <div>ICON</div>
+                        <MdBusinessCenter/>
                         <h4>Consultoria Especializada</h4>
-                        <p>Aqui vai ter uma pequena descrição falando sobre cada vantagem da loja.</p>
+                        <p>Vista-se com segurança e estilo! Nossa consultoria te ajuda a descobrir o que te veste melhor, elevando sua autoestima e autoconfiança. Agende sua consultoria na loja e sinta a diferença.</p>
                     </div>
                     <div className="vantagens__item">
-                        <div>ICON</div>
-                        <h4>Atendimento Dedicado</h4>
-                        <p>Aqui vai ter uma pequena descrição falando sobre cada vantagem da loja.</p>
+                        <RiDiscountPercentLine />
+                        <h4>10% Off</h4>
+                        <p>Não perca tempo! Garanta 10% de desconto em sua primeira compra e comece a economizar agora mesmo. Aproveite essa oportunidade única e renove seu estilo.</p>
                     </div>
                     <div className="vantagens__item">
-                        <div>ICON</div>
-                        <h4>Conforto Garantido</h4>
-                        <p>Aqui vai ter uma pequena descrição falando sobre cada vantagem da loja.</p>
+                         <GiClothes/>
+                        <h4>Tendencias 2024</h4>
+                        <p>Simplifique suas escolhas com peças casuais versáteis e cheias de estilo. Nossa coleção traz opções para todos os momentos, do trabalho ao happy hour. Encontre desde camisetas básicas até camisas polo e calças chino que combinam com tudo, Confira!</p>
                     </div>
                 </div>
                 <button className='vantagens__btn-contato'><a className='vantagens__btn-contato-link' href="https://wa.me/5575983332332?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20seus%20produ%C3%A7os!">Entre Em Contato <FaWhatsapp /></a></button>
