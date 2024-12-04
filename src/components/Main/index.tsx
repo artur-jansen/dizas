@@ -148,7 +148,7 @@ const Main = () => {
         fetchInstagramPosts();
     }, []);
 
-    const recentVideoPost = instagramPosts
+    const recentVideoPost = (instagramPosts || [])
         .filter(post => post.media_type === 'VIDEO')
         .sort((a, b) => new Date(b.timestamp).getTime() - new Date(a.timestamp).getTime())
         .slice(0, 1);
@@ -220,7 +220,7 @@ const Main = () => {
                     <div className='sobre__container-baixo'>
                         <h3>Nossas Redes</h3>
                         <div className="sobre__galeria-fotos">
-                            {instagramPosts.slice(0, 4).map((post) => (
+                        {(instagramPosts || []).slice(0, 4).map((post) => (
                                 <div key={post.id} className="instagram-post">
                                     <a href={post.permalink} target="_blank" rel="noopener noreferrer">
                                         {post.media_type === 'IMAGE' && <img className='instagram-post-feed' src={post.media_url} alt={post.caption} />}
