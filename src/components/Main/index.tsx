@@ -21,42 +21,70 @@ import { MdBusinessCenter } from "react-icons/md";
 import { GiClothes } from "react-icons/gi";
 
 
-import camisa1 from '../../assets/camisas/camisa1.webp';
-import camisa2 from '../../assets/camisas/camisa2.webp';
-import camisa3 from '../../assets/camisas/camisa3.webp';
-import camisa4 from '../../assets/camisas/camisa4.webp';
-import camisa5 from '../../assets/camisas/camisa5.webp';
-import camisa6 from '../../assets/camisas/camisa6.webp';
-import camisa7 from '../../assets/camisas/camisa7.webp';
-import camisa8 from '../../assets/camisas/camisa8.webp';
-import camisa9 from '../../assets/camisas/camisa9.webp';
-import camisa10 from '../../assets/camisas/camisa10.webp';
-import camisa11 from '../../assets/camisas/camisa11.webp';
-import camisa12 from '../../assets/camisas/camisa12.webp';
-import camisa13 from '../../assets/camisas/camisa13.webp';
-import camisa14 from '../../assets/camisas/camisa14.webp';
-import camisa15 from '../../assets/camisas/camisa15.webp';
-import camisa16 from '../../assets/camisas/camisa16.webp';
-import camisa17 from '../../assets/camisas/camisa17.webp';
-import camisa18 from '../../assets/camisas/camisa18.webp';
-import camisa19 from '../../assets/camisas/camisa19.webp';
+import camisa1 from '../../assets/camisas/camisa1.jpg';
+import camisa2 from '../../assets/camisas/camisa2.jpg';
+import camisa3 from '../../assets/camisas/camisa3.jpg';
+import camisa4 from '../../assets/camisas/camisa4.jpg';
+import camisa5 from '../../assets/camisas/camisa5.jpg';
+import camisa6 from '../../assets/camisas/camisa6.jpg';
+import camisa7 from '../../assets/camisas/camisa7.jpg';
+import camisa8 from '../../assets/camisas/camisa8.jpg';
+import camisa9 from '../../assets/camisas/camisa9.jpg';
+import camisa10 from '../../assets/camisas/camisa10.jpg';
+import camisa11 from '../../assets/camisas/camisa11.jpg';
+import camisa12 from '../../assets/camisas/camisa12.jpg';
+import camisa13 from '../../assets/camisas/camisa13.jpg';
+import camisa14 from '../../assets/camisas/camisa14.jpg';
+import camisa15 from '../../assets/camisas/camisa15.jpg';
+import camisa16 from '../../assets/camisas/camisa16.jpg';
+import camisa17 from '../../assets/camisas/camisa17.jpg';
+import camisa18 from '../../assets/camisas/camisa18.jpg';
+import camisa19 from '../../assets/camisas/camisa19.jpg';
+import camisa20 from '../../assets/camisas/camisa20.jpg';
+import camisa21 from '../../assets/camisas/camisa21.jpg';
+import camisa22 from '../../assets/camisas/camisa22.jpg';
 
-import calca1 from '../../assets/calcas/calca1.webp';
+import calca1 from '../../assets/calcas/calca1.jpg';
+import calca2 from '../../assets/calcas/calca2.jpg';
+import calca3 from '../../assets/calcas/calca3.jpg';
+import calca4 from '../../assets/calcas/calca4.jpg';
+import calca5 from '../../assets/calcas/calca5.jpg';
+import calca6 from '../../assets/calcas/calca6.jpg';
 
-import bermuda1 from '../../assets/bermudas/bermuda1.webp';
-import bermuda2 from '../../assets/bermudas/bermuda2.webp';
-import bermuda3 from '../../assets/bermudas/bermuda3.webp';
-import bermuda4 from '../../assets/bermudas/bermuda4.webp';
-import bermuda5 from '../../assets/bermudas/bermuda5.webp';
-import bermuda6 from '../../assets/bermudas/bermuda6.webp';
+import bermuda1 from '../../assets/bermudas/bermuda1.jpg';
+import bermuda2 from '../../assets/bermudas/bermuda2.jpg';
+import bermuda3 from '../../assets/bermudas/bermuda3.jpg';
+import bermuda4 from '../../assets/bermudas/bermuda4.jpg';
+import bermuda5 from '../../assets/bermudas/bermuda5.jpg';
+import bermuda6 from '../../assets/bermudas/bermuda6.jpg';
+import bermuda7 from '../../assets/bermudas/bermuda7.jpg';
+import bermuda8 from '../../assets/bermudas/bermuda8.jpg';
 
-import sapato1 from '../../assets/sapatos/sapato1.webp';
+import sapato1 from '../../assets/sapatos/sapato1.jpg';
+import sapato2 from '../../assets/sapatos/sapato2.jpg';
+import sapato3 from '../../assets/sapatos/sapato3.jpg';
+import sapato4 from '../../assets/sapatos/sapato4.jpg';
+import sapato5 from '../../assets/sapatos/sapato5.jpg';
+import sapato6 from '../../assets/sapatos/sapato6.jpg';
+import sapato7 from '../../assets/sapatos/sapato7.jpg';
+import sapato8 from '../../assets/sapatos/sapato8.jpg';
+import sapato9 from '../../assets/sapatos/sapato9.jpg';
+import sapato10 from '../../assets/sapatos/sapato10.jpg';
 
-import blazer1 from '../../assets/blazers/blazer1.webp';
-import blazer2 from '../../assets/blazers/blazer2.webp';
+import sueter1 from '../../assets/sueteres/sueter1.jpg';
+import sueter2 from '../../assets/sueteres/sueter2.jpg';
+import sueter3 from '../../assets/sueteres/sueter3.jpg';
+import sueter4 from '../../assets/sueteres/sueter4.jpg';
+import sueter5 from '../../assets/sueteres/sueter5.jpg';
+import sueter6 from '../../assets/sueteres/sueter6.jpg';
+
+import blazer1 from '../../assets/blazers/blazer1.jpg';
+import blazer2 from '../../assets/blazers/blazer2.jpg';
+import blazer3 from '../../assets/blazers/blazer3.jpg';
+import blazer4 from '../../assets/blazers/blazer4.jpg';
 
 interface CardRoupa {
-    imagem: StaticImageData;
+    imagem: string | StaticImageData;
     nome: string;
 }
 
@@ -72,43 +100,72 @@ interface InstagramPost {
 
 const Main = () => {
     const camisas: CardRoupa[] = [
-        { imagem: camisa1, nome: 'Exemplo titulo item' },
-        { imagem: camisa2, nome: 'Exemplo titulo item' },
-        { imagem: camisa3, nome: 'Exemplo titulo item' },
-        { imagem: camisa4, nome: 'Exemplo titulo item' },
-        { imagem: camisa5, nome: 'Exemplo titulo item' },
-        { imagem: camisa6, nome: 'Exemplo titulo item' },
-        { imagem: camisa7, nome: 'Exemplo titulo item' },
-        { imagem: camisa8, nome: 'Exemplo titulo item' },
-        { imagem: camisa9, nome: 'Exemplo titulo item' },
-        { imagem: camisa10, nome: 'Exemplo titulo item' },
-        { imagem: camisa11, nome: 'Exemplo titulo item' },
-        { imagem: camisa12, nome: 'Exemplo titulo item' },
-        { imagem: camisa13, nome: 'Exemplo titulo item' },
-        { imagem: camisa14, nome: 'Exemplo titulo item' },
-        { imagem: camisa15, nome: 'Exemplo titulo item' },
-        { imagem: camisa16, nome: 'Exemplo titulo item' },
-        { imagem: camisa17, nome: 'Exemplo titulo item' },
-        { imagem: camisa18, nome: 'Exemplo titulo item' },
-        { imagem: camisa19, nome: 'Exemplo titulo item' },
+        { imagem: camisa1, nome: 'Camiseta Básica Verde' },
+        { imagem: camisa2, nome: 'Camisa Salmão' },
+        { imagem: camisa3, nome: 'Camiseta Básica Cinza' },
+        { imagem: camisa4, nome: 'Camiseta Wafer Preta  ' },
+        { imagem: camisa5, nome: 'Camisa Polo Salmão' },
+        { imagem: camisa6, nome: 'Camiseta Básica Azul' },
+        { imagem: camisa7, nome: 'Camiseta Wafer Branca' },
+        { imagem: camisa8, nome: 'Camisa de Botão Branca' },
+        { imagem: camisa9, nome: 'Camiseta Básica Azul' },
+        { imagem: camisa10, nome: 'Camiseta Básica Marrom' },
+        { imagem: camisa11, nome: 'Camisa Polo Branca' },
+        { imagem: camisa12, nome: 'Camiseta Básica Preta' },
+        { imagem: camisa13, nome: 'Camiseta Básica Rosa' },
+        { imagem: camisa14, nome: 'Camisa De Botão Branca' },
+        { imagem: camisa15, nome: 'Camisa Gola Padre Preta' },
+        { imagem: camisa16, nome: 'Camiseta Básica Salmão' },
+        { imagem: camisa17, nome: 'Camisa Social Azul' },
+        { imagem: camisa18, nome: 'Camiseta Básica Laranja' },
+        { imagem: camisa19, nome: 'Camiseta Básica Branca ' },
+        { imagem: camisa20, nome: 'Camiseta Regata Machão Branca' },
+        { imagem: camisa21, nome: 'Camiseta Listrada Branca' },
+        { imagem: camisa22, nome: 'Camiseta Regata Branca' },
     ]
     const calcas: CardRoupa[] = [
         { imagem: calca1, nome: 'Exemplo titulo item' },
+        { imagem: calca2, nome: 'Exemplo titulo item' },
+        { imagem: calca3, nome: 'Exemplo titulo item' },
+        { imagem: calca4, nome: 'Exemplo titulo item' },
+        { imagem: calca5, nome: 'Exemplo titulo item' },
+        { imagem: calca6, nome: 'Exemplo titulo item' },
     ]
     const bermudas: CardRoupa[] = [
-        { imagem: bermuda1, nome: 'Exemplo titulo item' },
+        { imagem: bermuda1, nome: 'Bermuda ' },
         { imagem: bermuda2, nome: 'Exemplo titulo item' },
         { imagem: bermuda3, nome: 'Exemplo titulo item' },
         { imagem: bermuda4, nome: 'Exemplo titulo item' },
         { imagem: bermuda5, nome: 'Exemplo titulo item' },
         { imagem: bermuda6, nome: 'Exemplo titulo item' },
+        { imagem: bermuda7, nome: 'Exemplo titulo item' },
+        { imagem: bermuda8, nome: 'Exemplo titulo item' },
     ]
     const sapatos: CardRoupa[] = [
         { imagem: sapato1, nome: 'Exemplo titulo item' },
+        { imagem: sapato2, nome: 'Exemplo titulo item' },
+        { imagem: sapato3, nome: 'Exemplo titulo item' },
+        { imagem: sapato4, nome: 'Exemplo titulo item' },
+        { imagem: sapato5, nome: 'Exemplo titulo item' },
+        { imagem: sapato6, nome: 'Exemplo titulo item' },
+        { imagem: sapato7, nome: 'Exemplo titulo item' },
+        { imagem: sapato8, nome: 'Exemplo titulo item' },
+        { imagem: sapato9, nome: 'Exemplo titulo item' },
+        { imagem: sapato10, nome: 'Exemplo titulo item' },
+    ]
+    const sueteres: CardRoupa[] = [
+        { imagem: sueter1, nome: 'Exemplo titulo item' },
+        { imagem: sueter2, nome: 'Exemplo titulo item' },
+        { imagem: sueter3, nome: 'Exemplo titulo item' },
+        { imagem: sueter4, nome: 'Exemplo titulo item' },
+        { imagem: sueter5, nome: 'Exemplo titulo item' },
+        { imagem: sueter6, nome: 'Exemplo titulo item' },
     ]
     const blazers: CardRoupa[] = [
         { imagem: blazer1, nome: 'Exemplo titulo item' },
         { imagem: blazer2, nome: 'Exemplo titulo item' },
+        { imagem: blazer3, nome: 'Exemplo titulo item' },
+        { imagem: blazer4, nome: 'Exemplo titulo item' },
     ]
 
     const [show, setShow] = useState(false);
@@ -116,6 +173,7 @@ const Main = () => {
     const [showCalcas, setShowCalcas] = useState(false);
     const [showBermudas, setShowBermudas] = useState(false);
     const [showSapatos, setShowSapatos] = useState(false);
+    const [showSueteres, setShowSueteres] = useState(false);
     const [showBlazers, setShowBlazers] = useState(false);
     const handleClose = (modalType: string) => {
         switch (modalType) {
@@ -123,6 +181,7 @@ const Main = () => {
             case 'calcas': setShowCalcas(false); break;
             case 'bermudas': setShowBermudas(false); break;
             case 'sapatos': setShowSapatos(false); break;
+            case 'sueteres': setShowSueteres(false); break;
             case 'blazers': setShowBlazers(false); break;
         }
     };
@@ -133,6 +192,7 @@ const Main = () => {
             case 'calcas': setShowCalcas(true); break;
             case 'bermudas': setShowBermudas(true); break;
             case 'sapatos': setShowSapatos(true); break;
+            case 'sueteres': setShowSueteres(true); break;
             case 'blazers': setShowBlazers(true); break;
         }
     };
@@ -197,27 +257,27 @@ const Main = () => {
                         ))}
                         <Accordion className='accordion' defaultActiveKey="0">
                             <Accordion.Item className='accordion__item' eventKey="0">
-                                <Accordion.Header className='accordion__header'>Missão e Valores</Accordion.Header>
+                                <Accordion.Header className='accordion__header'>Nossa Missão</Accordion.Header>
                                 <Accordion.Body className='accordion__body'>
-                                    Oferecer à nossa cidade um ambiente agradável, com produtos de qualidade e atendimento diferenciado. Honrar nossos princípios, respeitando a todos, independentemente de cor, raça e etnia. Ter um olhar humano de forma holística.
+                                    Transformar a experiência de vestir do homem moderno, oferecendo roupas que aliam estilo, qualidade e personalidade, ajudando nossos clientes a se sentirem confiantes em qualquer ocasião.
                                 </Accordion.Body>
                             </Accordion.Item>
                             <Accordion.Item className='accordion__item' eventKey="1">
-                                <Accordion.Header className='accordion__header'>Onde Atendemos</Accordion.Header>
+                                <Accordion.Header className='accordion__header'>Valores da Dizas</Accordion.Header>
                                 <Accordion.Body className='accordion__body'>
-                                    Além de Conceição do Jacuípe, atendemos em Coração de Maria, Teodoro Sampaio, Lustosa, Terra Nova, dentre outras cidades... Consulte com nossa equipe via WhatsApp!
+                                    A excelência é nosso compromisso com a qualidade em cada detalhe, desde o atendimento até o produto final. Valorizamos a autenticidade, oferecendo peças que refletem o estilo único de cada cliente e traduzem sua personalidade. A confiança é a base das nossas relações, construindo laços transparentes e sólidos com nossos clientes e parceiros. Além disso, buscamos sempre a inovação, estando à frente das tendências e oferecendo soluções que atendem às necessidades do homem moderno.
                                 </Accordion.Body>
                             </Accordion.Item>
                             <Accordion.Item className='accordion__item' eventKey="2">
-                                <Accordion.Header className='accordion__header'>Nossa História</Accordion.Header>
+                                <Accordion.Header className='accordion__header'>Nosso Objetivo</Accordion.Header>
                                 <Accordion.Body className='accordion__body'>
                                     Há seis anos, o que parecia um sonho se tornou realidade. Eram só planos, vontades e pensamentos em trazer para a cidade um novo conceito de padaria, e assim aconteceu. Em 2017, nasce um projeto com grandes perspectivas e as melhores intenções. O povo conjacuípense merecia nosso projeto e assim fizemos!
                                 </Accordion.Body>
                             </Accordion.Item>
                             <Accordion.Item className='accordion__item' eventKey="3">
-                                <Accordion.Header className='accordion__header'>O Que Oferecemos de Melhor</Accordion.Header>
+                                <Accordion.Header className='accordion__header'>O Que Há de Melhor</Accordion.Header>
                                 <Accordion.Body className='accordion__body'>
-                                    Oferecemos diversos tipos de pães, desde massas comuns a massas especiais, deliciosos lanches, sobremesas, buffet de café da manhã, sopas, caldos, mingaus, bebidas, sorvetes, picolés e itens de bomboniere.
+                                    Na nossa loja, oferecemos uma ampla variedade de roupas e acessórios para atender ao estilo e necessidades do homem moderno. Temos camisas, calças, bermudas, blazers, suéteres, jaquetas, sapatos e muito mais, com peças que combinam conforto, qualidade e elegância. Cada item é cuidadosamente selecionado para proporcionar o melhor em moda, garantindo opções versáteis e de alta qualidade para todas as ocasiões.
                                 </Accordion.Body>
                             </Accordion.Item>
                         </Accordion>
@@ -242,22 +302,22 @@ const Main = () => {
                     <div className="vantagens__item">
                         <BsShop className='vantagens__item-icon'/>
                         <h4>Ambiente Agradável</h4>
-                        <p>Em nossa loja, você encontra um ambiente acolhedor, com café, biscoitinhos e ar condicionado, além de uma localização privilegiada para facilitar sua visita. Venha se sentir bem e encontrar as peças perfeitas para o seu estilo.</p>
+                        <p>Em nossa loja, você encontra um ambiente acolhedor, além de uma localização privilegiada para facilitar sua visita. Venha se sentir bem e encontrar as peças perfeitas para o seu estilo.</p>
                     </div>
                     <div className="vantagens__item">
                         <MdBusinessCenter className='vantagens__item-icon'/>
                         <h4>Consultoria Especializada</h4>
-                        <p>Vista-se com segurança e estilo! Nossa consultoria te ajuda a descobrir o que te veste melhor, elevando sua autoestima e autoconfiança. Agende sua consultoria na loja e sinta a diferença.</p>
+                        <p>Vista-se com segurança e estilo! Nossa consultoria te ajuda a descobrir o que te veste melhor, elevando sua autoestima e autoconfiança. Agende sua consultoria na loja e sinta a diferença.</p>
                     </div>
                     <div className="vantagens__item">
                         <RiDiscountPercentLine className='vantagens__item-icon'/>
                         <h4>10% Off</h4>
-                        <p>Não perca tempo! Garanta 10% de desconto em sua primeira compra e comece a economizar agora mesmo. Aproveite essa oportunidade única e renove seu estilo.</p>
+                        <p>Não perca tempo! Garanta 10% de desconto em sua primeira compra e comece a economizar agora mesmo. Aproveite essa oportunidade única e renove seu estilo.</p>
                     </div>
                     <div className="vantagens__item">
                          <GiClothes className='vantagens__item-icon'/>
                         <h4>Tendencias 2024</h4>
-                        <p>Simplifique suas escolhas com peças casuais versáteis e cheias de estilo. Nossa coleção traz opções para todos os momentos, do trabalho ao happy hour. Encontre desde camisetas básicas até camisas polo e calças chino que combinam com tudo, Confira!</p>
+                        <p>Simplifique suas escolhas com peças casuais versáteis e estilosas. Trazemos opções para todos os momentos, do trabalho ao happy hour! Desde camisas básicas até camisas polo e calças chino!</p>
                     </div>
                 </div>
                 <button className='vantagens__btn-contato'><a className='vantagens__btn-contato-link' href="https://wa.me/5575983332332?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20seus%20produtos!">Entre Em Contato <FaWhatsapp /></a></button>
@@ -288,6 +348,12 @@ const Main = () => {
                             <h3 className="colecao__item-titulo">Sapatos</h3>
                         </div>
                         <Button className='colecao__btn' variant="primary" onClick={() => handleShow('sapatos')}>Saiba Mais</Button>
+                    </div>
+                    <div className='colecao__item cdp-item5'>
+                        <div className="colecao__div-titulo">
+                            <h3 className="colecao__item-titulo">Suéteres</h3>
+                        </div>
+                        <Button className='colecao__btn' variant="primary" onClick={() => handleShow('sueteres')}>Saiba Mais</Button>
                     </div>
                     <div className='colecao__item cdp-item7'>
                         <div className="colecao__div-titulo">
@@ -380,6 +446,27 @@ const Main = () => {
                         </Button>
                     </Modal.Footer>
                 </Modal >
+                <Modal className='colecao__modal' show={showSueteres} onHide={() => handleClose('sueteres')}>
+                    <Modal.Header className='colecao__modal-header' closeButton>
+                        <Modal.Title className='colecao__modal-titulo'>NOSSOS SUÉTERES</Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body className='colecao__modal-container'>
+                        {sueteres.map((sueter, index) => (
+                            <div key={index} className='colecao__modal-container-card'>
+                                <Image className='colecao__modal-container-card-imagem' src={sueter.imagem} alt='Imagem de Suéter'></Image>
+                                <h4 className='colecao__modal-container-card-titulo'>{sueter.nome}</h4>
+                                <button className='colecao__modal-container-card-btn'>
+                                    <a className='colecao__modal-container-card-btn-link' href="https://wa.me/5575983332332?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20seus%20produtos!">QUERO COMPRAR</a>
+                                </button>
+                            </div>
+                        ))}
+                    </Modal.Body>
+                    <Modal.Footer>
+                        <Button variant="secondary" onClick={() => handleClose('sueteres')}>
+                            Fechar
+                        </Button>
+                    </Modal.Footer>
+                </Modal>
                 <Modal className='colecao__modal' show={showBlazers} onHide={() => handleClose('blazers')}>
                     <Modal.Header className='colecao__modal-header' closeButton>
                         <Modal.Title className='colecao__modal-titulo'>NOSSOS BLAZERS</Modal.Title>
