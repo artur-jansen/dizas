@@ -7,7 +7,4 @@ module.exports = {
       },
     ];
   },
-  basePath: '/dizas',
-  assetPrefix: '/dizas/',
-  trailingSlash: true,
 };
