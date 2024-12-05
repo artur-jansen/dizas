@@ -197,7 +197,7 @@ const Main = () => {
     useEffect(() => {
         async function fetchInstagramPosts() {
             try {
-                const response = await fetch('https://your-vercel-deployment-url/api/instagram');
+                const response = await fetch('https://dizas-7odici6w9-arturjansens-projects.vercel.app/api/instagram');
                 const data = await response.json();
                 setInstagramPosts(data.data);
             } catch (error) {
