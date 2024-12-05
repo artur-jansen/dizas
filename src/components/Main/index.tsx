@@ -101,7 +101,7 @@ interface InstagramPost {
 const Main = () => {
     const camisas: CardRoupa[] = [
         { imagem: camisa1, nome: 'Camiseta Básica Verde' },
-        { imagem: camisa2, nome: 'Camisa Salmão' },
+        { imagem: camisa2, nome: 'Camisa De Botão Salmão' },
         { imagem: camisa3, nome: 'Camiseta Básica Cinza' },
         { imagem: camisa4, nome: 'Camiseta Wafer Preta  ' },
         { imagem: camisa5, nome: 'Camisa Polo Salmão' },
@@ -124,48 +124,47 @@ const Main = () => {
         { imagem: camisa22, nome: 'Camiseta Regata Branca' },
     ]
     const calcas: CardRoupa[] = [
-        { imagem: calca1, nome: 'Exemplo titulo item' },
-        { imagem: calca2, nome: 'Exemplo titulo item' },
-        { imagem: calca3, nome: 'Exemplo titulo item' },
-        { imagem: calca4, nome: 'Exemplo titulo item' },
-        { imagem: calca5, nome: 'Exemplo titulo item' },
-        { imagem: calca6, nome: 'Exemplo titulo item' },
+        { imagem: calca1, nome: 'Calça De Alfaiataria Bege' },
+        { imagem: calca2, nome: 'Calça De Alfaiataria Bege Claro' },
+        { imagem: calca3, nome: 'Calça De Alfaiataria Marrom Claro' },
+        { imagem: calca4, nome: 'Calça De Alfaiataria Preta' },
+        { imagem: calca5, nome: 'Calça De Alfaiataria Bege' },
+        
     ]
     const bermudas: CardRoupa[] = [
-        { imagem: bermuda1, nome: 'Bermuda ' },
-        { imagem: bermuda2, nome: 'Exemplo titulo item' },
-        { imagem: bermuda3, nome: 'Exemplo titulo item' },
-        { imagem: bermuda4, nome: 'Exemplo titulo item' },
-        { imagem: bermuda5, nome: 'Exemplo titulo item' },
-        { imagem: bermuda6, nome: 'Exemplo titulo item' },
-        { imagem: bermuda7, nome: 'Exemplo titulo item' },
-        { imagem: bermuda8, nome: 'Exemplo titulo item' },
+        { imagem: bermuda1, nome: 'Bermuda Chino Cáqui' },
+        { imagem: bermuda2, nome: 'Bermuda Chino Marrom' },
+        { imagem: bermuda3, nome: 'Bermuda Casual' },
+        { imagem: bermuda4, nome: 'Bermuda Casual ' },
+        { imagem: bermuda5, nome: 'Bermuda Casual Verde-Claro ' },
+        { imagem: bermuda6, nome: 'Bermuda Chino Azul' },
+        { imagem: bermuda7, nome: 'Bermuda Casual Rosa' },
+        { imagem: bermuda8, nome: 'Bermuda Chino Bege' },
     ]
     const sapatos: CardRoupa[] = [
-        { imagem: sapato1, nome: 'Exemplo titulo item' },
-        { imagem: sapato2, nome: 'Exemplo titulo item' },
-        { imagem: sapato3, nome: 'Exemplo titulo item' },
-        { imagem: sapato4, nome: 'Exemplo titulo item' },
-        { imagem: sapato5, nome: 'Exemplo titulo item' },
-        { imagem: sapato6, nome: 'Exemplo titulo item' },
-        { imagem: sapato7, nome: 'Exemplo titulo item' },
-        { imagem: sapato8, nome: 'Exemplo titulo item' },
-        { imagem: sapato9, nome: 'Exemplo titulo item' },
-        { imagem: sapato10, nome: 'Exemplo titulo item' },
+        { imagem: sapato1, nome: 'Slip-On Couro Bicolor' },
+        { imagem: sapato2, nome: 'Sapato Em Couro Marrom' },
+        { imagem: sapato3, nome: 'Slip-on Em Couro Preto' },
+        { imagem: sapato4, nome: 'Tenis Casual Preto' },
+        { imagem: sapato5, nome: 'Slip-On Em Camurça Marrom' },
+        { imagem: sapato6, nome: 'Tenis Casual Bege' },
+        { imagem: sapato7, nome: 'Slip-On Em Couro Marrom' },
+        { imagem: sapato9, nome: 'Tenis Casual Branco' },
+        { imagem: sapato10, nome: 'Slip-On em camurça Verde ' },
     ]
     const sueteres: CardRoupa[] = [
         { imagem: sueter1, nome: 'Exemplo titulo item' },
-        { imagem: sueter2, nome: 'Exemplo titulo item' },
-        { imagem: sueter3, nome: 'Exemplo titulo item' },
-        { imagem: sueter4, nome: 'Exemplo titulo item' },
-        { imagem: sueter5, nome: 'Exemplo titulo item' },
-        { imagem: sueter6, nome: 'Exemplo titulo item' },
+        { imagem: sueter2, nome: 'Sueter Azul Com Listras' },
+        { imagem: sueter3, nome: 'Sueter Verde Com Listras ' },
+        { imagem: sueter4, nome: 'Sueter Cor Telha ' },
+        { imagem: sueter5, nome: 'Sueter Azul E Branco Bicolor' },
+        { imagem: sueter6, nome: 'Sueter ' },
     ]
     const blazers: CardRoupa[] = [
-        { imagem: blazer1, nome: 'Exemplo titulo item' },
-        { imagem: blazer2, nome: 'Exemplo titulo item' },
-        { imagem: blazer3, nome: 'Exemplo titulo item' },
-        { imagem: blazer4, nome: 'Exemplo titulo item' },
+        { imagem: blazer1, nome: 'Blazer Slim Fit Preto' },
+        { imagem: blazer2, nome: 'Blazer Slim Fit Cinza ' },
+        { imagem: blazer3, nome: 'Blazer Slim Fit Bege' },
+        { imagem: blazer4, nome: 'Blazer Slim Fit Marrom' },
     ]
 
     const [show, setShow] = useState(false);
@@ -200,7 +199,7 @@ const Main = () => {
     const [instagramPosts, setInstagramPosts] = useState<InstagramPost[]>([]);
     useEffect(() => {
         async function fetchInstagramPosts() {
-            const accessToken = 'IGQWRQM3JNYUZApQzE4eXc1Umgtd2d1Q2ZACTm9kNjV6ME1Sc0tGdE1MQlRIel8xeko5UkZAKZADlVM3NGZAEF1WWxJOTFOSzV5dHpaeTY5WVp0dnNPOHRpRndZAN3FNWlgtV1pJQ085am9FR21Xc1N0Qk9OSnhsdmpCcTAZD';
+            const accessToken = 'IGQWRPUllFdEZABVE1ZAUHkwY1c3WFM1VWlOazZAQTS1mTEVMUDZAyMWFCUldMeGpaUlBkOURoMHlpVWVPRldnUVdBU2JNUWVoUEVZAN1VLaW1mdVJoejdvWkppX1Y1T0thVDlQbUljNWN3QmF5dE1TT2NMWFpjN0tUMWMZD';
             try {
                 const response = await fetch(`https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url,permalink,thumbnail_url,timestamp&access_token=${accessToken}`);
                 const data = await response.json();
