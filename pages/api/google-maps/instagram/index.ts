@@ -1,15 +1,28 @@
 import { VercelRequest, VercelResponse } from '@vercel/node';
 import fetch from 'node-fetch';
+import Cors from 'cors';
+
+// Inicializar o middleware CORS
+const cors = Cors({
+  methods: ['GET', 'POST', 'OPTIONS'],
+  origin: 'https://dizasstore.com.br',
+  allowedHeaders: ['Content-Type', 'Authorization'],
+});
+
+// Helper para esperar o middleware
+function runMiddleware(req: VercelRequest, res: VercelResponse, fn: Function) {
+  return new Promise((resolve, reject) => {
+    fn(req, res, (result: any) => {
+      if (result instanceof Error) {
+        return reject(result);
+      }
+      return resolve(result);
+    });
+  });
+}
 
 export default async (req: VercelRequest, res: VercelResponse) => {
-  res.setHeader('Access-Control-Allow-Origin', 'https://dizasstore.com.br');
-  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
-
-  if (req.method === 'OPTIONS') {
-    res.status(200).end();
-    return;
-  }
+  await runMiddleware(req, res, cors);
 
   const accessToken = process.env.INSTAGRAM_ACCESS_TOKEN;
   if (!accessToken) {
