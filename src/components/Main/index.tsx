@@ -20,7 +20,6 @@ import { RiDiscountPercentLine } from "react-icons/ri";
 import { MdBusinessCenter } from "react-icons/md"; 
 import { GiClothes } from "react-icons/gi";
 
-
 import camisa1 from '../../assets/camisas/camisa1.jpg';
 import camisa2 from '../../assets/camisas/camisa2.jpg';
 import camisa3 from '../../assets/camisas/camisa3.jpg';
@@ -49,7 +48,6 @@ import calca2 from '../../assets/calcas/calca2.jpg';
 import calca3 from '../../assets/calcas/calca3.jpg';
 import calca4 from '../../assets/calcas/calca4.jpg';
 import calca5 from '../../assets/calcas/calca5.jpg';
-import calca6 from '../../assets/calcas/calca6.jpg';
 
 import bermuda1 from '../../assets/bermudas/bermuda1.jpg';
 import bermuda2 from '../../assets/bermudas/bermuda2.jpg';
@@ -67,7 +65,6 @@ import sapato4 from '../../assets/sapatos/sapato4.jpg';
 import sapato5 from '../../assets/sapatos/sapato5.jpg';
 import sapato6 from '../../assets/sapatos/sapato6.jpg';
 import sapato7 from '../../assets/sapatos/sapato7.jpg';
-import sapato8 from '../../assets/sapatos/sapato8.jpg';
 import sapato9 from '../../assets/sapatos/sapato9.jpg';
 import sapato10 from '../../assets/sapatos/sapato10.jpg';
 
@@ -199,9 +196,8 @@ const Main = () => {
     const [instagramPosts, setInstagramPosts] = useState<InstagramPost[]>([]);
     useEffect(() => {
         async function fetchInstagramPosts() {
-            const accessToken = 'IGQWRPUllFdEZABVE1ZAUHkwY1c3WFM1VWlOazZAQTS1mTEVMUDZAyMWFCUldMeGpaUlBkOURoMHlpVWVPRldnUVdBU2JNUWVoUEVZAN1VLaW1mdVJoejdvWkppX1Y1T0thVDlQbUljNWN3QmF5dE1TT2NMWFpjN0tUMWMZD';
             try {
-                const response = await fetch(`https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url,permalink,thumbnail_url,timestamp&access_token=${accessToken}`);
+                const response = await fetch('https://your-vercel-deployment-url/api/instagram');
                 const data = await response.json();
                 setInstagramPosts(data.data);
             } catch (error) {

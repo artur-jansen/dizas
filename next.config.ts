@@ -1,14 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
-  async rewrites() {
-    return [
-      {
-        source: '/api/google-maps/:path*',
-        destination: 'https://maps.googleapis.com/maps/api/place/details/:path*',
-      },
-    ];
-  },
+  output: 'export', // Configura o Next.js para exportar um site estático
 };
 
 module.exports = nextConfig;
