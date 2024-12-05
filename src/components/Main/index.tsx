@@ -15,9 +15,9 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import ElfsightWidget from '../Avaliacoes/index'
 import { FaGoogle } from "react-icons/fa";
-import { BsShop } from "react-icons/bs"; 
-import { RiDiscountPercentLine } from "react-icons/ri"; 
-import { MdBusinessCenter } from "react-icons/md"; 
+import { BsShop } from "react-icons/bs";
+import { RiDiscountPercentLine } from "react-icons/ri";
+import { MdBusinessCenter } from "react-icons/md";
 import { GiClothes } from "react-icons/gi";
 
 import camisa1 from '../../assets/camisas/camisa1.jpg';
@@ -126,7 +126,7 @@ const Main = () => {
         { imagem: calca3, nome: 'Calça De Alfaiataria Marrom Claro' },
         { imagem: calca4, nome: 'Calça De Alfaiataria Preta' },
         { imagem: calca5, nome: 'Calça De Alfaiataria Bege' },
-        
+
     ]
     const bermudas: CardRoupa[] = [
         { imagem: bermuda1, nome: 'Bermuda Chino Cáqui' },
@@ -194,6 +194,7 @@ const Main = () => {
     };
 
     const [instagramPosts, setInstagramPosts] = useState<InstagramPost[]>([]);
+
     useEffect(() => {
         async function fetchInstagramPosts() {
             try {
@@ -280,7 +281,7 @@ const Main = () => {
                     <div className='sobre__container-baixo'>
                         <h3>Nossas Redes</h3>
                         <div className="sobre__galeria-fotos">
-                        {(instagramPosts || []).slice(0, 4).map((post) => (
+                            {(instagramPosts || []).slice(0, 4).map((post) => (
                                 <div key={post.id} className="instagram-post">
                                     <a href={post.permalink} target="_blank" rel="noopener noreferrer">
                                         {post.media_type === 'IMAGE' && <img className='instagram-post-feed' src={post.media_url} alt={post.caption} />}
@@ -295,22 +296,22 @@ const Main = () => {
             <div className="vantagens">
                 <div className="vantagens__container">
                     <div className="vantagens__item">
-                        <BsShop className='vantagens__item-icon'/>
+                        <BsShop className='vantagens__item-icon' />
                         <h4>Ambiente Agradável</h4>
                         <p>Em nossa loja, você encontra um ambiente acolhedor, além de uma localização privilegiada para facilitar sua visita. Venha se sentir bem e encontrar as peças perfeitas para o seu estilo.</p>
                     </div>
                     <div className="vantagens__item">
-                        <MdBusinessCenter className='vantagens__item-icon'/>
+                        <MdBusinessCenter className='vantagens__item-icon' />
                         <h4>Consultoria Especializada</h4>
                         <p>Vista-se com segurança e estilo! Nossa consultoria te ajuda a descobrir o que te veste melhor, elevando sua autoestima e autoconfiança. Agende sua consultoria na loja e sinta a diferença.</p>
                     </div>
                     <div className="vantagens__item">
-                        <RiDiscountPercentLine className='vantagens__item-icon'/>
+                        <RiDiscountPercentLine className='vantagens__item-icon' />
                         <h4>10% Off</h4>
                         <p>Não perca tempo! Garanta 10% de desconto em sua primeira compra e comece a economizar agora mesmo. Aproveite essa oportunidade única e renove seu estilo.</p>
                     </div>
                     <div className="vantagens__item">
-                         <GiClothes className='vantagens__item-icon'/>
+                        <GiClothes className='vantagens__item-icon' />
                         <h4>Tendencias 2024</h4>
                         <p>Simplifique suas escolhas com peças casuais versáteis e estilosas. Trazemos opções para todos os momentos, do trabalho ao happy hour! Desde camisas básicas até camisas polo e calças chino!</p>
                     </div>
@@ -488,7 +489,7 @@ const Main = () => {
                 <h2 className='depoimentos__titulo'>Depoimentos dos clientes</h2>
                 <div className="depoimentos__container">
                     <div className="elfsight-app-47faf601-94f1-4bc1-86bd-53d7dc3e70b5" data-elfsight-app-lazy></div>
-                    <button className='depoimentos__button-avaliacao'><a className='depoimentos__button-avaliacao-link' href="https://www.google.com/maps/place/Dizas+store+-+Moda+masculina/@-12.2429157,-38.9538725,17z/data=!4m8!3m7!1s0x71439252bae8799:0x9058203ec1ccff00!8m2!3d-12.2429157!4d-38.9512976!9m1!1b1!16s%2Fg%2F11j8tnjpkw?entry=ttu&g_ep=EgoyMDI0MTIwMS4xIKXMDSoASAFQAw%3D%3D">Deixar Uma Avaliação <FaGoogle className='depoimentos__button-avaliacao-link-icon'/></a></button>
+                    <button className='depoimentos__button-avaliacao'><a className='depoimentos__button-avaliacao-link' href="https://www.google.com/maps/place/Dizas+store+-+Moda+masculina/@-12.2429157,-38.9538725,17z/data=!4m8!3m7!1s0x71439252bae8799:0x9058203ec1ccff00!8m2!3d-12.2429157!4d-38.9512976!9m1!1b1!16s%2Fg%2F11j8tnjpkw?entry=ttu&g_ep=EgoyMDI0MTIwMS4xIKXMDSoASAFQAw%3D%3D">Deixar Uma Avaliação <FaGoogle className='depoimentos__button-avaliacao-link-icon' /></a></button>
                 </div>
             </section>
             <section id='localizacao' className='localizacao'>
